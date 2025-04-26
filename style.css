@@ -2,10 +2,9 @@
   margin: 0px;
   padding: 0px;
 }
-.body{
+.body {
   background-color: inherit;
 }
-
 
 #noscript-container {
   display: flex;
@@ -14,12 +13,10 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
- 
-  
+
   box-sizing: border-box;
 }
-.container-child{
-
+.container-child {
   border: solid 1px rgb(188, 133, 79);
   margin: 6px;
   display: flex;
@@ -34,9 +31,8 @@
   border-radius: 24px;
   background-color: rgb(249, 203, 151);
   box-sizing: border-box;
- box-shadow: 1px 1px 8px 4px rgb(172, 171, 171);
- color: rgb(82, 61, 23);
-
+  box-shadow: 1px 1px 8px 4px rgb(172, 171, 171);
+  color: rgb(82, 61, 23);
 }
 
 #noscript-container b {
@@ -44,14 +40,14 @@
   text-align: center;
 }
 
-#noscript-container .container-child img{
+#noscript-container .container-child img {
   height: 50%;
   width: 50%;
   box-sizing: border-box;
 }
 
 @media (max-width: 1087px) {
-  #noscript-container .container-child img{
+  #noscript-container .container-child img {
     height: 200px;
     width: 200px;
     box-sizing: border-box;
@@ -67,10 +63,8 @@
     margin-block: 28px;
   }
 
-  .container-child{
-
+  .container-child {
     border: hidden;
-    margin: 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,23 +72,19 @@
     width: 90%;
     height: 70%;
     padding: 16px;
-    
+
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 0px 20px 0px 20px;
     background-color: rgb(249, 203, 151);
     box-sizing: border-box;
-   box-shadow: 1px 1px 8px 4px rgb(172, 171, 171);
-   color: rgb(82, 61, 23);
-   
-  
+    box-shadow: 1px 1px 8px 4px rgb(172, 171, 171);
+    color: rgb(82, 61, 23);
   }
-
-
 }
-.container-child p{
+.container-child p {
   color: rgb(52, 70, 86);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: small;
   margin-top: 12px;
   text-align: left;
