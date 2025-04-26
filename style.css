@@ -20,7 +20,7 @@
 }
 .container-child{
 
-  border: solid 1px rgb(22, 141, 177);
+  border: solid 1px rgb(188, 133, 79);
   margin: 6px;
   display: flex;
   flex-direction: column;
@@ -55,6 +55,39 @@
     height: 200px;
     width: 200px;
     box-sizing: border-box;
+  }
+  #noscript-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    box-sizing: border-box;
+    margin-block: 28px;
+  }
+
+  .container-child{
+
+    border: hidden;
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    padding: 16px;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 0px 20px 0px 20px;
+    background-color: rgb(249, 203, 151);
+    box-sizing: border-box;
+   box-shadow: 1px 1px 8px 4px rgb(172, 171, 171);
+   color: rgb(82, 61, 23);
+   
+  
   }
 
 
