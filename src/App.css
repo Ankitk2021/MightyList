@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   overflow: hidden;
+    color: black;
+   
+
+}
+.body-container{
+    background-color: #eeeeee;
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+}

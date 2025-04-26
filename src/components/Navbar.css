@@ -1,0 +1,50 @@
+.nav-container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    
+
+    
+}
+
+.nav-container h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 4px;
+    user-select: none;
+   padding: 8px;
+   font-size: xx-large;
+}
+.list-container{
+    margin-top: 14px;
+    margin-right: 80px;
+}
+.list-container ul{
+    display: flex;
+    
+}
+
+.list-container ul li{
+    padding-block: 12px;
+    padding-inline: 32px;
+    list-style: none;
+    cursor: pointer;
+    background-color: rgb(0, 0, 128);
+    border-radius: 48px;
+    margin-inline: 8px;
+    margin-block: 4px;
+    color: bisque;
+    user-select: none;
+    font-family: Geneva, Verdana, sans-serif;
+    text-align: center;
+   
+    
+}
+
+.list-container ul li:hover{
+    background-color: rgb(156, 156, 241);
+    color: navy;
+
+}
