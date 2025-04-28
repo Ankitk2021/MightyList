@@ -17,12 +17,7 @@ function Navbar() {
         </div>
 
         <div className="img-container">
-          <img
-            width="48"
-            height="48"
-            src="https://img.icons8.com/fluency/48/menu--v1.png"
-            alt="menu--v1"
-          />
+        <img  src="https://img.icons8.com/fluency/48/menu-squared-2.png" alt="menu-squared-2"/>
         </div>
       </div>
     </>
