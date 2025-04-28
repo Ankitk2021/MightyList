@@ -19,7 +19,7 @@
   padding: 8px;
   font-size: xx-large;
   color: rgb(10, 28, 126);
-  text-shadow: 1px 1px 10px rgb(9, 34, 224);
+  text-shadow: 1px 1px 2px rgb(9, 34, 224);
 }
 .list-container {
   margin-top: 4px;
@@ -110,7 +110,7 @@ img {
 
     font-size: xx-large;
     color: rgb(10, 28, 126);
-    text-shadow: 1px 1px 10px rgb(9, 34, 224);
+    text-shadow: 1px 1px 2px rgb(9, 34, 224);
   }
 
   .list-container {
