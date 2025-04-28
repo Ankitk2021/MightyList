@@ -13,10 +13,20 @@
   box-shadow: 1px 1px 8px 2px rgba(158, 163, 170, 0.505);
 }
 
-.nav-container h2 {
+.logoandname{
+  display: flex;
+  margin-left: 22px;
+}
+.logoandname img{
+  height: 40px;
+  margin-top: 12px;
+  
+}
+
+.nav-container .logoandname h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  margin-left: 8px;
+
   width: fit-content;
   user-select: none;
   padding: 8px;

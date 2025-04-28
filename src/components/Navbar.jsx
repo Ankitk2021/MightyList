@@ -1,13 +1,16 @@
 import React from "react";
 import "./Navbar.css";
 import "../assets/ham-menu.svg";
-import "../assets/logo.png";
+import logo from"../assets/logo.png";
 
 function Navbar() {
   return (
     <>
       <div class="nav-container">
+        <div className="logoandname">
+        <img src={logo} alt="" />
         <h2>MightyNote</h2>
+        </div>
         <div className="list-container">
           <ul>
             <li>Dashboard</li>
