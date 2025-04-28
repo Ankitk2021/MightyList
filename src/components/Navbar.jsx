@@ -15,6 +15,7 @@ function Navbar() {
                 <li>Notes</li>
                 <li>You</li>
                 
+                
             </ul>
         </div>
     </div>
