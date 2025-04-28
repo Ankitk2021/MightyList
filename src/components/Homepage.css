@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.parent{
+    width:inherit;
+    height: fit-content;
+    min-height: 100vh;
+    border: 1px;
+    background-color: aqua;
+    box-sizing: border-box;
+    padding: 12px;
+    border: solid 2px tomato;
+}

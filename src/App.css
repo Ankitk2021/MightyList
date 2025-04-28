@@ -1,14 +1,37 @@
-*{
-    margin: 0px;
-    padding: 0px;
-   overflow: hidden;
-    color: black;
-   
-
+* {
+  margin: 0px;
+  padding: 0px;
+  color: black;
 }
-.body-container{
-    background-color: #eeeeee;
-    width: 100vw;
-    height: fit-content;
-    min-height: 100vh;
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.body-container {
+  background-color: #eeeeee;
+  height: fit-content;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: unset;
+  box-sizing: border-box;
+  
 }
