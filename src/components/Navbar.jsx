@@ -26,6 +26,7 @@ function Navbar() {
               height="28"
               src="https://img.icons8.com/fluency/48/tasks--v2.png"
               alt="tasks--v2"
+              onContextMenu={false}
             />
           </div>
         </div>
