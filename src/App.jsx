@@ -8,10 +8,12 @@ function App() {
     <>
       <div className="body-container">
         <Navbar />
+        <Homepage/>
+        <Footer/>
        
-        <Homepage />
+       
 
-        <Footer />
+        
       </div>
     </>
   );

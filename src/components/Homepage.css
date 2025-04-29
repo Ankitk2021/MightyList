@@ -2,13 +2,25 @@
     margin: 0px;
     padding: 0px;
 }
+:root{
+    --primaryColor:#3B82F6;
+    --bodyColor:#F9FAFB;
+    --navBackground:#1F2937;
+    --primaryText:	#111827;
+    --secondayText: #6B7280;
+    --success: #10B981;
+    --danger: #EF4444;
+    --highlight: #DBEAFE;
+  
+    
+  }
 .parent{
     width:inherit;
     height: fit-content;
     min-height: 100vh;
     border: 1px;
-    background-color: aqua;
+    background-color: var(--bodyColor);
     box-sizing: border-box;
     padding: 12px;
-    border: solid 2px tomato;
+   
 }
