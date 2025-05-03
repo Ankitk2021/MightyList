@@ -6,7 +6,7 @@ import logo from "../assets/logo.png";
 function Navbar() {
   return (
     <>
-      <div class="nav-container">
+      <div className="nav-container">
         <div className="logoandname">
           <img src={logo} alt="" hidden />
           <h2>NoteBook</h2>

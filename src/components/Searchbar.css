@@ -10,69 +10,48 @@
   --secondayText: #6b7280;
   --success: #10b981;
   --danger: #ef4444;
-  --borderRadius:12px;
+  --borderRadius: 12px;
   --highlight: #dbeafe;
 }
 .searchbar {
-  width: inherit;
+  width: 98vw;
   height: fit-content;
-  border: 2px black;
   display: flex;
-  justify-content: flex-start;
+
+  border: 2px black;
+
+  box-sizing: border-box;
 }
-.searchbar input{
-  width: 50%;
+.searchbar input {
+  width: inherit;
+  padding: 12px;
   height: fit-content;
-  padding: 16px;
+  box-sizing: border-box;
   background-color: inherit;
   border: 2px solid var(--navBackground);
   color: var(--secondayText);
+  justify-content: center;
   border-radius: var(--borderRadius);
-  margin-inline: 12px;
-  
-  
-  
 }
-.searchbar button{
 
-    display: inline-block;
-    border-radius: 12px;
-    padding-inline: var(--borderRadius);
-    margin-left: 12px;
-    padding-block: 6px;
-    background-color: var(--navBackground);
+.searchbar input:focus {
+  outline: var(--navBackground) 3px solid;
+  box-shadow: 1px 1px 8px 2px var(--navBackground);
+  color: var(--primaryText);
+  text-align: start;
 }
-.searchbar input:focus{
-    outline: var(--navBackground) 3px solid;
-    box-sizing: border-box;
-    box-shadow: 1px 1px 8px 2px var(--navBackground);
-    color: var(--primaryText);
-    width: 80%;
-    text-align: start;
-   
-   
-    
-}
-.searchbar input:hover{
-   
-    outline: var(--navBackground) 3px solid;
-    box-sizing: border-box;
-    width: 80%;
-    box-shadow: 1px 1px 8px 2px var(--navBackground);
-    color: var(--primaryText);
+.searchbar input:hover {
+  outline: var(--navBackground) 3px solid;
+  box-shadow: 1px 1px 8px 2px var(--navBackground);
+  color: var(--primaryText);
 }
 @media (max-width: 420px) {
-
-    .searchbar input{
-        width: 50%;
-        height: fit-content;
-        padding: 10px;
-        background-color: inherit;
-        border: 2px solid var(--navBackground);
-        color: var(--secondayText);
-        border-radius: 30px;
-        
-        
-      }
-
+  .searchbar input {
+    width: inherit;
+    height: fit-content;
+    background-color: inherit;
+    border: 2px solid var(--navBackground);
+    color: var(--secondayText);
+    border-radius: 30px;
+  }
 }

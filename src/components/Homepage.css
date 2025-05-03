@@ -25,13 +25,12 @@
 }
 .fabBtn {
   position: fixed;
- 
   display: inline-block;
   width: fit-content;
   height: fit-content;
   border: none;
-  top: 85%;
-  left: 90%;
+  bottom: 3vh;
+  right: 3vw;
   box-sizing: border-box;
 }
 .fabBtn button {
@@ -62,74 +61,4 @@
   justify-content: center;
   flex-direction: column;
   justify-content: center;
-  
 }
-
-@media (max-width: 460px) {
-
-    .fabBtn {
-        position: fixed;
-       
-        display: inline-block;
-        width: fit-content;
-        height: fit-content;
-        border: none;
-        top: 88%;
-        right: 10px;
-        bottom: 10px;
-        left: 70%;
-        box-sizing: border-box;
-      }
-}
-
-@media (min-width: 430px) {
-
-    .fabBtn {
-        position: fixed;
-       
-        display: inline-block;
-        width: fit-content;
-        height: fit-content;
-        border: none;
-        top: 84%;
-       
-       
-        left: 50%;
-        box-sizing: border-box;
-      }
-}
-
-
-@media (max-width: 540px) {
-
-    .fabBtn {
-        position: fixed;
-       
-        display: inline-block;
-        width: fit-content;
-        height: fit-content;
-        border: none;
-        top: 86%;
-       
-       
-        left: 75%;
-        box-sizing: border-box;
-      }
-}
-@media (max-width: 912px) {
-
-    .fabBtn {
-        position: fixed;
-       
-        display: inline-block;
-        width: fit-content;
-        height: fit-content;
-        border: none;
-        top: 90%;
-       
-       
-        left: 85%;
-        box-sizing: border-box;
-      }
-}
-
