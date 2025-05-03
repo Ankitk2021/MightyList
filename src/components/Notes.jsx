@@ -5,8 +5,8 @@ function Notes() {
   return (
     <div className="notes-background">
       <div className="note">
-        <p className="title">Birthday</p>{" "}
-        <input type="checkbox"  className="checkbox" />
+        <p className="title">Birthday</p>
+
         <p className="desc">
           Today is my birthdaylorem20 Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Dolore fugit porro fuga repellendus in alias
@@ -15,6 +15,12 @@ function Notes() {
           ipsum magni eius porro reprehenderit, eum qui quidem facere recusandae
           accusantium iusto fugiat in dolore consequatur.
         </p>
+      </div>
+      <div className="checkbox-container">
+        <label>
+          <input type="checkbox" />
+          <span class="custom-checkbox"></span>
+        </label>
       </div>
     </div>
   );

@@ -18,6 +18,10 @@
   height: fit-content;
   min-height: 100vh;
   border: 1px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--bodyColor);
   box-sizing: border-box;
   padding: 8px;
@@ -32,12 +36,14 @@
   bottom: 3vh;
   right: 3vw;
   box-sizing: border-box;
+  z-index: 1000;
 }
 .fabBtn button {
   padding: 20px;
   border-radius: 20px;
   box-shadow: 1px 1px 4px var(--navBackground);
   border: none;
+ 
 }
 
 .fabBtn button:hover {
@@ -53,12 +59,10 @@
   min-height: inherit;
   margin-top: 12px;
   border-radius: var(--border-radius);
-  border: 2px solid var(--highlight);
-  padding-block: 30px;
-  padding-inline: 40px;
+  border: 2px solid var(--highlight) hidden;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
 }

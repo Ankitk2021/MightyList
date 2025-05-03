@@ -14,12 +14,13 @@
   --highlight: #dbeafe;
 }
 .searchbar {
-  width: 98vw;
+  width: 101%;
   height: fit-content;
   display: flex;
-
+  overflow: hidden;
   border: 2px black;
-
+  padding: 6px;
+  justify-content: center;
   box-sizing: border-box;
 }
 .searchbar input {
@@ -36,13 +37,13 @@
 
 .searchbar input:focus {
   outline: var(--navBackground) 3px solid;
-  box-shadow: 1px 1px 8px 2px var(--navBackground);
+  box-shadow: 1px 1px 4px 2px var(--navBackground);
   color: var(--primaryText);
   text-align: start;
 }
 .searchbar input:hover {
   outline: var(--navBackground) 3px solid;
-  box-shadow: 1px 1px 8px 2px var(--navBackground);
+  box-shadow: 1px 1px 4px 2px var(--navBackground);
   color: var(--primaryText);
 }
 @media (max-width: 420px) {
@@ -52,6 +53,6 @@
     background-color: inherit;
     border: 2px solid var(--navBackground);
     color: var(--secondayText);
-    border-radius: 30px;
+    border-radius: var(--borderRadius);
   }
 }
