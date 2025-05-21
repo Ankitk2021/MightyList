@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  --primaryColor: #3b82f6;
+  --bodyColor: #f9fafb;
+  --navBackground: #1f2937;
+  --primaryText: #111827;
+  --secondayText: #6b7280;
+  --success: #10b981;
+  --danger: #ef4444;
+  --highlight: #dbeafe;
+  --border-radius: 12px;
+}
+.dialgue {
+}
+.dialgue-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 80px;
+  height: fit-content;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid var(--navBackground);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 0px 4px 1px var(--secondayText);
+
+  /* Use a semi-transparent background so backdrop-filter works */
+  background-color: rgba(255, 243, 243, 0.704);
+
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+
+  /* Correct opacity instead of visibility */
+  opacity: 0.8;
+}
+
+.dialgue-container p {
+  font-size: larger;
+  color: var(--primaryText);
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.dialgue-container-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 300px;
+  justify-content: center;
+
+  align-items: center;
+  margin: 20px;
+  height: fit-content;
+}
+.dialgue-container-form div {
+  margin-block: 8px;
+}
+
+.dialgue-container div input,
+textarea {
+  width: inherit;
+  padding: 12px;
+  height: fit-content;
+  min-height: 25px;
+  display: inline-block;
+  row-gap: 3px;
+  color: red;
+  margin-top: 4px;
+  outline-style: none;
+  outline: auto;
+  width: 60vw;
+  max-width: 400px;
+  background-color: white;
+  border: 2px solid var(--navBackground) hidden;
+  color: var(--secondayText);
+  justify-content: center;
+  border-radius: var(--borderRadius);
+}
+.dialgue-container div input::placeholder {
+  color: var(--secondayText);
+
+  text-wrap: wrap;
+}
+
+.dialgue-container-form div label {
+  align-self: normal;
+
+  color: var(--primaryText);
+  margin-inline-start: 2%;
+  justify-self: flex-start;
+}
+
+.dialgue-container-form button {
+  margin-top: 12px;
+  border-radius: var(--border-radius);
+}
+.x-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 48px;
+
+  margin-top: -58px;
+}
+.x-container span {
+  color: #111827;
+  cursor: pointer;
+  font-size: large;
+}

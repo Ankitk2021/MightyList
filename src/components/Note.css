@@ -16,17 +16,26 @@
 .notes-background {
   border: 2px solid var(--highlight);
   height: fit-content;
-  max-width: inherit;
+  width: 100%;
+
   box-sizing: border-box;
   padding: 8px;
+
   border-radius: var(--border-radius);
   margin-block: 8px;
-  
+}
+.notes-background:hover {
+  border: #10b981;
+  background-color: rgba(153, 205, 50, 0.018);
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 1px var(--navBackground);
+  box-sizing: border-box;
 }
 
 .note {
   padding: 10px;
   border-radius: inherit;
+  cursor: pointer;
 }
 
 .note .title {
@@ -51,11 +60,11 @@
 
   border-radius: var(--border-radius);
 }
-.checkbox-container{
-  width: inherit;
+.checkbox-container {
+  width: fit-content;
   display: flex;
+  justify-self: flex-end;
   justify-content: flex-end;
-  margin-inline-end: 12px;
 }
 .custom-checkbox {
   display: inline-block;
@@ -65,6 +74,7 @@
   border-radius: 8px;
   padding: 2px;
   background-color: white;
+
   position: relative;
   cursor: pointer;
 }

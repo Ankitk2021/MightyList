@@ -1,31 +1,39 @@
-import React from "react";
 import "./Homepage.css";
 
 import Searchbar from "./Searchbar";
 import Notes from "./Notes";
-function Homepage() {
+import InputDialoge from "./InputDialoge";
+import Note from "./Note";
+import { useState } from "react";
 
+function Homepage(props) {
+  //var note = [];
+
+  const [list, setList] = useState([]);
+  console.log(list);
+
+  function fabBtn() {
+    props.sethidd((v) => !v);
+  }
   return (
     <div className="parent">
       <Searchbar />
-    
+
       <div className="fabBtn">
-        <button>Add New</button>
+        <button onClick={fabBtn} hidden={props.hidd}>
+          Add New
+        </button>
       </div>
 
-      <div className="note-container">
+      {list.map((e) => {
+        return <Notes title={e.title} desc={e.desc} />;
+      })}
 
-       
-       
-        <Notes/>
-        <Notes/>
-        <Notes/>
-        <Notes/>
-        <Notes/>
-        <Notes/>
-        <Notes/>
-        <Notes/>
-      </div>
+      <InputDialoge
+        hidd={props.hidd}
+        setList={setList}
+        sethidd={props.sethidd}
+      />
     </div>
   );
 }
