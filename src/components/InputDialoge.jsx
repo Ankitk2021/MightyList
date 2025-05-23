@@ -37,7 +37,7 @@ function InputDialoge(props) {
       /* notes is empty no need to update the previous list.
        Just do push back new object in the list noteList = [] */
 
-      noteList.push(obj);
+      if(obj.title && obj.desc){ noteList.push(obj);}
     } else {
       /*Here your notes have some data .You have to retrive first and make notesList same to that.Then push back then put*/
 
