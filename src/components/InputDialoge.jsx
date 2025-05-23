@@ -7,15 +7,13 @@ function InputDialoge(props) {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
 
-  
-
   function spanClick() {
     props.sethidd((v) => !v);
   }
 
   function saveClick() {
     event.preventDefault();
-    props.sethidd(p => !p)
+    props.sethidd((p) => !p);
     handleSubmit();
   }
   function handleTitleChange() {
@@ -27,9 +25,26 @@ function InputDialoge(props) {
     setDesc(v);
   }
   function handleSubmit() {
-    console.log(title, desc);
-    props.setList(p=>[...p,{'title': title,'desc': desc}]);
-   
+    //Local Storage
+
+    let noteList = []; //your empty List of note
+
+    const obj = { title: title, desc: desc }; //creating object of current Note
+
+    const notes = localStorage.getItem("notes"); //Get note reference db
+
+    if (!notes) {
+      /* notes is empty no need to update the previous list.
+       Just do push back new object in the list noteList = [] */
+
+      noteList.push(obj);
+    } else {
+      /*Here your notes have some data .You have to retrive first and make notesList same to that.Then push back then put*/
+
+      noteList = JSON.parse(notes); //making same
+      noteList.push(obj); //pushing
+    }
+    localStorage.setItem("notes", JSON.stringify(noteList)); //finally putting 😠
   }
 
   return (
