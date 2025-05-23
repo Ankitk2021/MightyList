@@ -31,13 +31,13 @@
   box-shadow: 0px 0px 4px 1px var(--secondayText);
 
   /* Use a semi-transparent background so backdrop-filter works */
-  background-color: rgba(255, 243, 243, 0.919);
+  background-color: rgba(255, 243, 243, 0.936);
 
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 
   /* Correct opacity instead of visibility */
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .dialgue-container p {
