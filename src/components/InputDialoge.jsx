@@ -42,7 +42,7 @@ function InputDialoge(props) {
       /*Here your notes have some data .You have to retrive first and make notesList same to that.Then push back then put*/
 
       noteList = JSON.parse(notes); //making same
-      noteList.push(obj); //pushing
+      if(obj.title && obj.desc){ noteList.push(obj);} //pushing
     }
     localStorage.setItem("notes", JSON.stringify(noteList)); //finally putting 😠
   }
